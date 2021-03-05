@@ -1,0 +1,128 @@
+:root {
+    /* theme colors */
+    --cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    /* neutral */
+    --light-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    font-family: Kumbh Sans, sans-serif;
+    font-weight: 400;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--light-gray)
+}
+
+p {
+    font-size: 0.8rem;
+    color: var(--light-gray)
+}
+
+.stats p {
+    font-size: 0.6rem;
+}
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cyan);
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    max-height: 100vh;
+}
+
+.cards {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+}
+
+.graphics {
+    border-radius: 15px 15px 0 0;
+}
+
+.card-top {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-photo {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.info {
+    padding: 20px;
+    align-self: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.info h5, .info h6 {
+    display: inline-block;
+}
+
+.info h6 {
+    margin-left: 5px;
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+}
+
+.stats p {
+    margin-top: 5px;
+}
+
+.divider {
+    height: 0.5px;
+    background-color: var(--light-gray);
+    opacity: 0.5;
+}
+
+.stats-node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
