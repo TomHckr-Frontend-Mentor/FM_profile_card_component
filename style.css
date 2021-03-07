@@ -9,7 +9,13 @@
 
 body {
     overflow: hidden;
+    position: relative;
 }
+
+html {
+    overflow: hidden;
+}
+
 
 * {
     font-family: Kumbh Sans, sans-serif;
