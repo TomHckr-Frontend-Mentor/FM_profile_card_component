@@ -25,24 +25,36 @@ html {
     margin: 0;
 }
 
-h5 {
+.name {
     font-weight: 700;
     font-size: 1rem;
+    color: var(--desaturated-blue);
 }
 
-h6 {
+.city {
     font-weight: 400;
-    font-size: 1rem;
-    color: var(--light-gray)
-}
-
-p {
     font-size: 0.8rem;
-    color: var(--light-gray)
+    color: var(--light-gray);
+    margin-top: 9px;
 }
 
-.stats p {
-    font-size: 0.6rem;
+.age {
+    font-size: 1rem;
+    color: var(--light-gray);
+    margin-left: 8px;
+}
+
+.num {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+}
+
+.desc {
+    font-size: 0.5rem;
+    color: var(--light-gray);
+    margin-top: 4.5px;
+    letter-spacing: 1px;
 }
 
 .cards::before {
@@ -86,7 +98,7 @@ p {
     border-radius: 15px 15px 0 0;
 }
 
-.card-top {
+.card-header {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -106,26 +118,10 @@ p {
     text-align: center;
 }
 
-.info h5, .info h6 {
-    display: inline-block;
-}
-
-.info h6 {
-    margin-left: 5px;
-}
-
-.info p {
-    margin-top: 10px;
-}
-
 .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 30px;
-}
-
-.stats p {
-    margin-top: 5px;
 }
 
 .divider {
@@ -134,7 +130,7 @@ p {
     opacity: 0.5;
 }
 
-.stats-node {
+.stats h2 {
     display: flex;
     align-items: center;
     justify-content: center;
